@@ -1,25 +1,20 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Counter from "./Counter";
-import {inject} from 'mobx-react'
-import {Store} from "./Store";
-import {observe} from "mobx";
-import SuperMarket from "./SuperMarket";
-
+import CompoMarket from "./CompoMarket";
+import {Route} from 'react-router'
+import {BrowserRouter} from 'react-router-dom'
+import AddressInput from "./address/AddressInput";
 
 class App extends Component {
-
-
 
     render() {
         console.log(this.props);
         return (
-            <div>
-                <Counter/>
-                <hr/>
-                <SuperMarket/>
-            </div>
+            <BrowserRouter>
+                <Route exact path={"/"} component={CompoMarket}/>
+                <Route exact path={"/addressin"} component={AddressInput}/>
+
+            </BrowserRouter>
         );
     }
 }

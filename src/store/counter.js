@@ -1,23 +1,23 @@
 import { observable, action ,decorate} from 'mobx';
 
 export default class CounterStore {
-    // @observable
+    @observable
     number = 1;
 
-    // @action
+    @action
     increase = () => {
         this.number++;
     }
 
-    // @action
+    @action
     decrease = () => {
         this.number--;
     }
 }
 
 
-decorate(CounterStore,{
+/*decorate(CounterStore,{
     number:observable,
     increase:action,
     decrease:action
-})
+})*/
