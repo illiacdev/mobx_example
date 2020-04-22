@@ -10,25 +10,49 @@ const layout = {
 };
 
 
-function onChange2(value,arg2) {
+function onChange2(value) {
     console.log("***1",value);
-    console.log("***2",arg2);
+}
+
+function onChange3(allFields) {
+    console.log("***2",allFields);
+    values = allFields;
+}
+
+var values ={};
+var ref = React.createRef();
+var ref2 = React.createRef();
+
+function onCkick() {
+    ref.current.submit();
+    console.log("ref",ref);
+    console.log("ref2",ref2);
 }
 
 const CustomizedForm = ({onChange, fields}) => (
 
+    
     <React.Fragment>
 
         Hello!
-        {/*<pre className="language-bash">{JSON.stringify(fields, null, 2)}</pre>*/}
+        <pre className="language-bash">{JSON.stringify(values, null, 2)}</pre>
 
         <Form
+            ref={ref}
             name="global_state"
             layout="inline"
             fields={fields}
             onFieldsChange={(changedFields, allFields) => {
                 onChange(allFields);
             }}
+
+            onValuesChange={(changedFields, allFields) => {
+                onChange3(allFields);
+            }}
+
+            onFinish={(value)=>{
+                console.log("온서븜밋",value);}}
+
         >
             <Form.Item
                 name="username"
@@ -43,11 +67,13 @@ const CustomizedForm = ({onChange, fields}) => (
                 <Input />
             </Form.Item>
             <Form.Item
-                name='item2'
-                label="Lable Item2"
+                name={['root','item1']}
+                label="Lable Item1"
+                id={"testid1"}
             ><Input onChange={onChange2}/></Form.Item>
         </Form>
 
+        <button ref={ref2} onClick={onCkick}>테스트</button>
     </React.Fragment>
 );
 

@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="439abf4c-2f0b-4f7d-a342-052c7773791f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config-overrides.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CompoMarket.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/address/AddressInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/address/AddressMaster.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/my3.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/counter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/my.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/my.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/address/AddressInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/address/AddressInput.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +11,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,9 +38,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="X:/v2/welfare24" />
+    <property name="last_opened_file_path" value="E:/WorkArea/ROHA/RWMS" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -151,8 +143,8 @@
       <item itemvalue="Jest.should 12" />
       <item itemvalue="Jest.should 13" />
       <item itemvalue="Jest.should 1" />
-      <item itemvalue="npm.npm start" />
       <item itemvalue="Jest.should mobx1" />
+      <item itemvalue="npm.npm start" />
     </list>
     <recent_temporary>
       <list>
@@ -192,21 +184,23 @@
       <workItem from="1587348394491" duration="131000" />
       <workItem from="1587355160675" duration="716000" />
       <workItem from="1587436279133" duration="17127000" />
+      <workItem from="1587487680188" duration="5177000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1583" y="720" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587015850448">
       <screen x="0" y="0" width="3840" height="2080" />
     </state>
     <state x="1583" y="720" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587015850448" />
-    <state x="1483" y="550" key="FileChooserDialogImpl" timestamp="1587356846882">
-      <screen x="0" y="0" width="3840" height="2080" />
+    <state x="742" y="275" key="FileChooserDialogImpl" timestamp="1587503004299">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1483" y="550" key="FileChooserDialogImpl/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587356846882" />
+    <state x="742" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.1069.1920.1080/3840.715.1707.960@0.0.1920.1040" timestamp="1587503004299" />
     <state width="3752" height="395" key="GridCell.Tab.0.bottom" timestamp="1587447491639">
       <screen x="0" y="0" width="3840" height="2080" />
     </state>
@@ -227,6 +221,10 @@
     </state>
     <state width="3752" height="395" key="GridCell.Tab.0.right/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587436482262" />
     <state width="3752" height="395" key="GridCell.Tab.0.right/7680.456.2160.3760/0.0.3840.2080/-3840.2160.3840.2160@0.0.3840.2080" timestamp="1587447491639" />
+    <state x="595" y="162" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587504044618">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="595" y="162" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040/-1920.1069.1920.1080/3840.715.1707.960@0.0.1920.1040" timestamp="1587504044618" />
     <state x="-1931" y="2160" width="1942" height="2171" key="dock-window-1" timestamp="1587436935766">
       <screen x="-3840" y="2160" width="3840" height="2080" />
     </state>
