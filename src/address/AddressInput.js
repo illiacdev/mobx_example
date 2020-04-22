@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import 'antd/dist/antd.css'
-import {Form, Input} from 'antd'
+import {Form, Input, Modal} from 'antd'
 import {observer} from 'mobx-react'
-import {decorate, observable, reaction} from 'mobx'
+import {decorate, observable} from 'mobx'
+import {master} from '../address/AddressMaster'
 
 const layout = {
     labelCol: {span: 8},
@@ -10,128 +11,132 @@ const layout = {
 };
 
 
-function onChange2(value) {
-    console.log("***1",value);
-}
-
-function onChange3(allFields) {
-    console.log("***2",allFields);
-    values = allFields;
-}
-
-var values ={};
+// var values ={};
 var ref = React.createRef();
-var ref2 = React.createRef();
 
 function onCkick() {
     ref.current.submit();
-    console.log("ref",ref);
-    console.log("ref2",ref2);
+    console.log("ref", ref);
+
 }
 
-const CustomizedForm = ({onChange, fields}) => (
 
-    
+export const AddressItem = ({address, onSelectAddr}) => {
+    return (
+        <div onClick={() => {
+            console.log("onClick!!!", address);
+            onSelectAddr(address)
+        }}>
+            {address['1단계'] + ' '}
+            {address['2단계'] + ' '}
+            {address['3단계'] + ' '}
+        </div>
+    );
+};
+const CustomizedForm = ({onChange, values, onSelectAddr}) => (
+
     <React.Fragment>
-
-        Hello!
-        <pre className="language-bash">{JSON.stringify(values, null, 2)}</pre>
+        {/*<pre className="language-bash">{JSON.stringify(values, null, 2)}</pre>*/}
 
         <Form
             ref={ref}
             name="global_state"
-            layout="inline"
-            fields={fields}
-            onFieldsChange={(changedFields, allFields) => {
+            layout={layout}
+            // fields={fields}
+            /*onFieldsChange={(changedFields, allFields) => {
                 onChange(allFields);
-            }}
+            }}*/
 
             onValuesChange={(changedFields, allFields) => {
-                onChange3(allFields);
+                onChange(changedFields);
             }}
 
-            onFinish={(value)=>{
-                console.log("온서븜밋",value);}}
+            onFinish={(value) => {
+                console.log("온서븜밋", value);
+            }}
 
         >
             <Form.Item
-                name="username"
-                label="Username"
-                /* rules={[
-                     {
-                         required: true,
-                         message: 'Username is required!',
-                     },
-                 ]}*/
+                name="address"
+                label="주소검색"
+
             >
-                <Input />
+                <Input/>
             </Form.Item>
-            <Form.Item
-                name={['root','item1']}
-                label="Lable Item1"
-                id={"testid1"}
-            ><Input onChange={onChange2}/></Form.Item>
+
         </Form>
 
-        <button ref={ref2} onClick={onCkick}>테스트</button>
+
     </React.Fragment>
 );
 
 
 class AddressInput extends Component {
+    values = {};
+    result = {};
 
-    fields = [{
-        name: ['username'],
-        value: 'Ant Design',
-    },
-        {
-            name: ['root', 'item1'],
-            value: 'Test2',
-        }
-    ];
+    filter = (key) => {
+        let filter = master.filter(value => {
+            // console.log(value["1단계"]);
+            if (value["1단계"].search(key) >= 0)
+                return true;
 
-    address;
+            if (value["2단계"].search(key) >= 0)
+                return true;
 
-    dto = {};
+            if (value["3단계"].search(key) >= 0)
+                return true;
 
-    setFields = (newFields) => {
-        // console.log(newFields);
-        this.fields = newFields;
-        let find = newFields.find(value => {
-            return value.name[0] == "username"
-            // console.log(value);
-            // return true;
+            return false;
         });
 
-        this.address = find.value;
+        return filter;
+    }
+    setFields = (newFields) => {
 
-        console.log(find.value);
-
+        console.log(newFields);
+        this.result = this.filter(newFields.address);
     }
 
-    fillDto = () => {
-
+    show = () => {
+        this.setState({...this.state, visible: true})
     }
+    hide = () => {
+        this.setState({...this.state, visible: false})
+    }
+
+
+    state = {visible: false}
 
     render() {
         return (
-            <div>
-                hello!
+            <Modal visible={this.state.visible} onOk={this.hide} onCancel={this.hide}>
                 <CustomizedForm
-                    fields={this.fields}
+                    values={this.values}
                     onChange={newFields => {
                         this.setFields(newFields);
                     }}
+                    {...this.props}
                 />
-                <pre className="language-bash">{JSON.stringify(this.fields, null, 2)}</pre>
-            </div>
+                {
+
+                    (this.result.length > 0) && this.result.map(address => (
+                        <AddressItem address={address} onSelectAddr={(addr) => {
+                            this.hide()
+                            this.props.onSelectAddr(addr)
+                        }}/>
+                    ))
+                }
+                {/*<pre className="language-bash">{JSON.stringify(this.result, null, 2)}</pre>*/}
+            </Modal>
         );
     }
 }
 
 decorate(AddressInput, {
-    fields: observable,
-    address: observable
+    values: observable,
+    address: observable,
+    result: observable
 })
 
 

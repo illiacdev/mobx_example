@@ -4,6 +4,7 @@ import CompoMarket from "./CompoMarket";
 import {Route} from 'react-router'
 import {BrowserRouter} from 'react-router-dom'
 import AddressInput from "./address/AddressInput";
+import CompoExample from "./address/CompoExample";
 
 class App extends Component {
 
@@ -12,7 +13,7 @@ class App extends Component {
         return (
             <BrowserRouter>
                 <Route exact path={"/"} component={CompoMarket}/>
-                <Route exact path={"/addressin"} component={AddressInput}/>
+                <Route exact path={"/addr"} component={CompoExample}/>
 
             </BrowserRouter>
         );

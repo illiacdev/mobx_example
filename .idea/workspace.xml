@@ -1,9 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="439abf4c-2f0b-4f7d-a342-052c7773791f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/address/CompoExample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/my4.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/address/AddressInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/address/AddressInput.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/my3.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/my3.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,9 +48,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -51,6 +86,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2018.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -58,69 +94,69 @@
       <recent name="D:\work 2019\mobx" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.should mobx1">
-    <configuration name="should  (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.should a">
+    <configuration name="should a" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/test/my.test.js" />
+      <test-file value="$PROJECT_DIR$/src/test/my3.test.js" />
+      <test-names>
+        <test-name value="should a" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="should b" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/my3.test.js" />
+      <test-names>
+        <test-name value="should b" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="should fields" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/my3.test.js" />
+      <test-names>
+        <test-name value="should fields" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="should immutable" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/my3.test.js" />
+      <test-names>
+        <test-name value="should immutable" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="should " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/my4.test.js" />
       <test-names>
         <test-name value="should " />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should 1" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/test/my3.test.js" />
-      <test-names>
-        <test-name value="should 1" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should 12" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/test/my2.test.js" />
-      <test-names>
-        <test-name value="should 12" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should 13" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/test/my2.test.js" />
-      <test-names>
-        <test-name value="should 13" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should mobx1" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/test/my3.test.js" />
-      <test-names>
-        <test-name value="should mobx1" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -139,20 +175,20 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
-      <item itemvalue="Jest.should  (1)" />
-      <item itemvalue="Jest.should 12" />
-      <item itemvalue="Jest.should 13" />
-      <item itemvalue="Jest.should 1" />
-      <item itemvalue="Jest.should mobx1" />
       <item itemvalue="npm.npm start" />
+      <item itemvalue="Jest.should fields" />
+      <item itemvalue="Jest.should " />
+      <item itemvalue="Jest.should immutable" />
+      <item itemvalue="Jest.should a" />
+      <item itemvalue="Jest.should b" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.should mobx1" />
-        <item itemvalue="Jest.should  (1)" />
-        <item itemvalue="Jest.should 1" />
-        <item itemvalue="Jest.should 13" />
-        <item itemvalue="Jest.should 12" />
+        <item itemvalue="Jest.should a" />
+        <item itemvalue="Jest.should b" />
+        <item itemvalue="Jest.should fields" />
+        <item itemvalue="Jest.should immutable" />
+        <item itemvalue="Jest.should " />
       </list>
     </recent_temporary>
   </component>
@@ -191,6 +227,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="1583" y="720" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587015850448">
       <screen x="0" y="0" width="3840" height="2080" />
@@ -201,26 +248,30 @@
     </state>
     <state x="1483" y="550" key="FileChooserDialogImpl/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587356846882" />
     <state x="742" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.1069.1920.1080/3840.715.1707.960@0.0.1920.1040" timestamp="1587503004299" />
-    <state width="3752" height="395" key="GridCell.Tab.0.bottom" timestamp="1587447491639">
+    <state width="3752" height="758" key="GridCell.Tab.0.bottom" timestamp="1587535069289">
       <screen x="0" y="0" width="3840" height="2080" />
     </state>
-    <state width="3752" height="395" key="GridCell.Tab.0.bottom/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587436482262" />
+    <state width="3752" height="758" key="GridCell.Tab.0.bottom/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587535069289" />
     <state width="3752" height="395" key="GridCell.Tab.0.bottom/7680.456.2160.3760/0.0.3840.2080/-3840.2160.3840.2160@0.0.3840.2080" timestamp="1587447491639" />
-    <state width="3752" height="395" key="GridCell.Tab.0.center" timestamp="1587447491639">
+    <state width="3752" height="758" key="GridCell.Tab.0.center" timestamp="1587535069289">
       <screen x="0" y="0" width="3840" height="2080" />
     </state>
-    <state width="3752" height="395" key="GridCell.Tab.0.center/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587436482262" />
+    <state width="3752" height="758" key="GridCell.Tab.0.center/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587535069289" />
     <state width="3752" height="395" key="GridCell.Tab.0.center/7680.456.2160.3760/0.0.3840.2080/-3840.2160.3840.2160@0.0.3840.2080" timestamp="1587447491639" />
-    <state width="3752" height="395" key="GridCell.Tab.0.left" timestamp="1587447491638">
+    <state width="3752" height="758" key="GridCell.Tab.0.left" timestamp="1587535069289">
       <screen x="0" y="0" width="3840" height="2080" />
     </state>
-    <state width="3752" height="395" key="GridCell.Tab.0.left/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587436482262" />
+    <state width="3752" height="758" key="GridCell.Tab.0.left/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587535069289" />
     <state width="3752" height="395" key="GridCell.Tab.0.left/7680.456.2160.3760/0.0.3840.2080/-3840.2160.3840.2160@0.0.3840.2080" timestamp="1587447491638" />
-    <state width="3752" height="395" key="GridCell.Tab.0.right" timestamp="1587447491639">
+    <state width="3752" height="758" key="GridCell.Tab.0.right" timestamp="1587535069289">
       <screen x="0" y="0" width="3840" height="2080" />
     </state>
-    <state width="3752" height="395" key="GridCell.Tab.0.right/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587436482262" />
+    <state width="3752" height="758" key="GridCell.Tab.0.right/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587535069289" />
     <state width="3752" height="395" key="GridCell.Tab.0.right/7680.456.2160.3760/0.0.3840.2080/-3840.2160.3840.2160@0.0.3840.2080" timestamp="1587447491639" />
+    <state x="933" y="304" key="SettingsEditor" timestamp="1587526070033">
+      <screen x="0" y="0" width="3840" height="2080" />
+    </state>
+    <state x="933" y="304" key="SettingsEditor/-3840.2160.3840.2080/7680.456.2160.3840/0.0.3840.2080@0.0.3840.2080" timestamp="1587526070033" />
     <state x="595" y="162" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1587504044618">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

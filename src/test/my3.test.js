@@ -1,7 +1,8 @@
 import * as rx from 'rxjs'
 import Optional from 'optional-js'
-import {observable, reaction, computed, autorun} from 'mobx';
-
+import {observable, reaction, computed, autorun, decorate} from 'mobx';
+import {Map, List} from 'immutable'
+import {master} from '../address/AddressMaster'
 
 it('should 1', function () {
     var test = undefined;
@@ -39,12 +40,77 @@ it('should mobx1', function () {
 
 });
 
+class Target {
+    store = {a: 0, b: 0};
+    // store = {a:{}};
+}
+
+decorate(Target, {
+    store: observable
+})
 it('should fields', function () {
 
-    var fields = {
-        name: ['username'],
-        value: 'Ant Design',
-    };
+    let target = new Target();
+    let map1 = new Map().merge(target.store);
+    target.store = map1.toJS();
 
+    autorun(() => {
+        console.log("***", target.store.a);
+    })
+
+    autorun(r => {
+        console.log("***2", target.store.b);
+
+    })
+
+    let a = map1.set('a', 2);
+    target.store = a.toJS();
+
+
+});
+
+it('should immutable', function () {
+    const raw = {b: 1}
+    const obj = Map();
+
+    let map = obj.merge(raw);
+    console.log(map.toJS());
+
+    // let in1 = obj.setIn(['a','b'],10);
+    // console.log(in1.toJS());
+
+});
+
+
+it('should a', function () {
+
+    let key = "수정"
+
+    // console.log(master);
+    let filter = master.filter(value => {
+        // console.log(value["1단계"]);
+        if (value["1단계"].search(key) >= 0)
+            return true;
+
+        if (value["2단계"].search(key) >= 0)
+            return true;
+
+        if (value["3단계"].search(key) >= 0)
+            return true;
+
+
+        return false;
+    });
+
+    console.log(filter);
+
+});
+
+
+it('should b', function () {
+    let key = "수정";
+    let src = "수정1동";
+    let number1 = src.search(key);
+    console.log(number1);
 
 });
